@@ -1,0 +1,53 @@
+/* Общие стили для контейнера кнопки */
+#gSignInWrapper {
+  margin: auto;
+  width: 100%;
+  max-width: 240px; /* Можно адаптировать под нужный размер */
+  padding: 10px;
+  text-align: center;
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Стили для текста перед кнопкой */
+#gSignInWrapper .label {
+  display: block;
+  margin-bottom: 15px;
+  color: #666; /* Серый цвет текста */
+  font-size: 16px; /* Размер шрифта */
+}
+
+/* Стили для самой кнопки входа */
+#gSignInWrapper .customGPlusSignIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #db4437; /* Красный цвет фона, характерный для Google */
+  color: white; /* Белый цвет текста */
+  border-radius: 2px; /* Скругление углов */
+  border: none; /* Убрать стандартный бордюр */
+  padding: 10px 20px; /* Паддинги вокруг текста и иконки */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Стили для иконки внутри кнопки (пример) */
+#gSignInWrapper .customGPlusSignIn .IconButton {
+  margin-right: 10px; /* Отступ справа для иконки */
+}
+
+/* Стиль для текста внутри кнопки */
+#gSignInWrapper .customGPlusSignIn button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Убрать стандартные стили кнопки при фокусе */
+#gSignInWrapper .customGPlusSignIn button:focus {
+  outline: none;
+}

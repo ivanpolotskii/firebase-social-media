@@ -1,0 +1,54 @@
+/* Основные стили для навигационной панели */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Темно-серый фон */
+  color: #fff; /* Белый текст */
+  padding: 10px 20px; /* Отступы вокруг содержимого */
+}
+
+/* Стили для контейнера ссылок */
+.links {
+  display: flex;
+}
+
+/* Стили для ссылок */
+.links a {
+  color: #fff; /* Белый цвет текста ссылок */
+  text-decoration: none; /* Убрать подчеркивание */
+  margin-right: 15px; /* Отступы справа для всех ссылок кроме последней */
+  padding: 5px 10px; /* Небольшие отступы вокруг текста */
+  border-radius: 5px; /* Слегка скругленные углы */
+}
+
+.links a:hover, .logout-button:hover {
+  background-color: #555; /* Немного более светлый фон при наведении */
+}
+
+/* Стили для раздела пользователя */
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 40px; /* Фиксированный размер изображения */
+  height: 40px; /* Фиксированный размер изображения */
+  border-radius: 50%; /* Сделать изображение круглым */
+  margin-right: 10px; /* Отступ справа от изображения */
+}
+
+/* Стили для кнопки выхода */
+.logout-button {
+  background-color: #444; /* Темно-серый фон */
+  color: #fff; /* Белый текст */
+  border: none; /* Убрать стандартный бордюр */
+  padding: 5px 10px; /* Отступы вокруг текста */
+  cursor: pointer; /* Курсор в виде руки при наведении */
+  border-radius: 5px; /* Скругление углов */
+}
+
+.logout-button:focus {
+  outline: none; /* Убрать фокусную рамку */
+}

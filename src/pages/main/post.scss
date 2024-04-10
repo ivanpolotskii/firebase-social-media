@@ -1,0 +1,70 @@
+/* Стили для общего контейнера поста */
+.post {
+  background-color: #282c34; /* Темный фон для контейнера поста */
+  color: #ffffff; /* Светлый цвет текста для контраста */
+  border-radius: 8px; /* Скругленные углы для эстетики */
+  padding: 20px; /* Отступы внутри контейнера */
+  margin-bottom: 20px; /* Отступ снизу для разделения между постами */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Легкая тень для объема */
+}
+
+/* Стили для заголовка поста */
+.post .title h1 {
+  margin: 0 0 10px 0; /* Убрать стандартные отступы и добавить нижний отступ */
+  color: #78909c; /* Серо-голубой цвет для заголовка */
+}
+.post .title{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Стили для тела поста */
+.post .body pre {
+  font-size: 16px; /* Размер шрифта для текста */
+  line-height: 1.6; /* Межстрочное расстояние для улучшения читаемости */
+  margin: 0 0 10px 0; /* Отступ снизу */
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/* Стили для подвала поста */
+.post .footer {
+  display: flex; /* Для горизонтального выравнивания элементов */
+  align-items: center; /* Выравнивание элементов по центру по вертикали */
+  justify-content: space-between; /* Равномерное распределение контента */
+  // border: 1px solid #000;
+}
+
+.post .footer p {
+  margin: 0; /* Убрать стандартные отступы */
+  font-size: 14px; /* Меньший размер шрифта для подписи */
+  color: #b0bec5; /* Светло-серый цвет текста */
+  margin-left: 5px;
+}
+
+/* Стили для кнопки лайка */
+.post .footer .IconButton {
+  background: transparent; /* Прозрачный фон */
+  border: none; /* Убрать стандартные рамки */
+  cursor: pointer; /* Курсор в виде указателя */
+  display: flex; /* Выравнивание иконки и счетчика лайков */
+  align-items: center; /* Центрирование содержимого по вертикали */
+  color: #b0bec5; /* Светло-серый цвет для иконки и текста */
+  margin: 10px !important;
+}
+
+.post .footer .IconButton p {
+  color: #b0bec5; /* Светло-серый цвет текста */
+}
+
+.post .footer button {
+  background-color: #424242;
+  color: #b0bec5;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

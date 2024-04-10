@@ -1,0 +1,67 @@
+.form-container{
+  width: 100%; /* Adjust this as needed */
+  margin: 0 auto;
+  padding: 20px;
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Стили для формы */
+form {
+  background-color: #2a2d34; /* Темный фон для формы */
+  padding: 20px; /* Отступы внутри формы */
+  border-radius: 8px; /* Скругленные углы для формы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для объема */
+  width: 900px;
+  margin: 20px;
+}
+
+/* Стили для полей ввода и текстового поля */
+form input,
+form textarea {
+  width: 100%; /* Полная ширина внутри родительского элемента */
+  padding: 10px; /* Отступы внутри поля */
+  margin-bottom: 10px; /* Отступ снизу для разделения элементов */
+  background-color: #1e2126; /* Темный фон для полей */
+  border: 1px solid #444; /* Тонкая граница вокруг полей */
+  border-radius: 4px; /* Скругленные углы для полей */
+  color: #ccc; /* Светлый цвет текста */
+}
+form textarea{
+  height: 100px;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  outline: none; /* Убрать стандартный фокус */
+  border-color: #575E6A; /* Смена цвета границы при фокусе */
+}
+
+/* Стили для текста ошибок */
+form p {
+  color: #e53935; /* Ярко-красный цвет для текста ошибок */
+  font-size: 14px; /* Меньший размер шрифта для текста ошибок */
+  margin: -5px 0 10px 0; /* Отрицательный отступ сверху для близости к полю */
+}
+
+/* Стили для кнопки отправки */
+form input[type="submit"] {
+  background-color: #546E7A; /* Сине-серый цвет для кнопки */
+  color: #FFFFFF; /* Белый текст */
+  padding: 10px 20px; /* Отступы вокруг текста */
+  border: none; /* Убрать стандартную границу */
+  border-radius: 4px; /* Скругленные углы для кнопки */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+}
+
+form input[type="submit"]:hover {
+  background-color: #455A64; /* Темнее при наведении */
+}
+form input[type="color"]{
+  width: 30px; 
+  /* Темнее при наведении */
+}
+
